@@ -1,3 +1,7 @@
+"use client";
+
+import { signIn } from "next-auth/react";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#fdfcff] flex items-center justify-center px-6">
@@ -11,7 +15,10 @@ export default function Home() {
           Speak it into Existence.
         </p>
 
-        <button className="mt-8 inline-flex items-center justify-center rounded-full bg-[#d8c7ff] px-8 py-4 text-lg font-medium text-gray-900 shadow-sm hover:scale-105 transition">
+        <button
+          onClick={() => signIn("google")}
+          className="mt-8 inline-flex items-center justify-center rounded-full bg-[#d8c7ff] px-8 py-4 text-lg font-medium text-gray-900 shadow-sm hover:scale-105 transition"
+        >
           Get Started with Google
         </button>
       </div>
