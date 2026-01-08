@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import GeminiButton from "@/app/components/GeminiButton";
+import GeminiButton from "../components/GeminiButton";
+
 
 export default function StudioPage() {
   return (
